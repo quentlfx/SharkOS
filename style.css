@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Harmond-ExtBdItaExtExp';
+    src: url(fonts/Harmond-ExtBdItaExp.otf);
+}
+
+body {
+
+
+}
+
+
+p {
+    font-family: 'Harmond-ExtBdItaExtExp' ,sans-serif;
+    font-size: 1.2em;
+    color: #0000;
+}
