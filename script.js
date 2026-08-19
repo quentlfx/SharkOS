@@ -42,3 +42,30 @@ function dragElement(elmnt) {
     }
 
 }
+
+
+var welcomeScreen = document.querySelector("#welcome")
+
+function closeWindow(element) {
+  element.style.display = "none"
+}
+
+function openWindow(element) {
+    element.style.display = "flex"
+}
+
+
+var welcomeclose = document.querySelector("#welcomeclose")
+
+
+var welcomeopen = document.querySelector("#welcomeopen")
+
+welcomeclose.addEventListener("click", function() {
+  closeWindow(welcomeScreen);
+});
+
+welcomeopen.addEventListener("click", function() {
+  openWindow(welcomeScreen);
+});
+
+var selectedIcon = undefined

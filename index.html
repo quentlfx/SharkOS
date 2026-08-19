@@ -7,9 +7,6 @@
     <title>Watch my WebOS!</title>
 </head>
 
- <body>
-        <!DOCTYPE html>
-<html>
 <body style="background-image: url(./images/shark_os.jpg);background-size: cover;height: 100vh">
 
 
@@ -26,20 +23,29 @@
     background-color: rgba(255, 255, 255, 0.25);
     color: #000;
 ">
-    <p style="margin: 0; color: #000;">WebOS</p>
+    <p style="margin: 0; color: #000;" class="title hand" id="welcomeopen">WebOS</p>
     <p id="time";
-     style="margin: 0; color: #000;">
+     style="margin: 0; color: #000;" class="title">
     Time</p>
 </div>
 
 
 
 
-<div id="welcome" style="position: absolute; top: 50%; left: 50%;transform:translate( -50%, -50%); padding:16px; border:1px solid black;width: 256px; background-color: rgba(255, 255, 255, 0.8);">
+<div id="welcome" class="window" style="position: absolute; top: 50%; left: 50%;transform:translate( -50%, -50%); padding:16px; border:1px solid black;width: 256px; background-color: rgba(255, 255, 255, 0.8);">
     
     <div id="welcomeheader"
-      style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: left; margin-top: 8px;">
-      <p style="margin: 0px; color: #746464; font-weight: 500">welcome page</p>
+        class="windowheader"
+        style="width: 100%;
+        display: flex;"
+        align-items: center; 
+        cursor: move; 
+        justify-content: left; 
+        margin-top: 8px;
+        height: 32px; 
+        background-color:gray>
+        <div id="welcomeclose" class="closebutton"></div>
+      <p style="margin: 0px; color: #c0c9c8; font-weight: 500">welcome page</p>
     </div>
     
     <h1>Welcome to my Own OS</h1>
@@ -50,8 +56,17 @@
         alt="Jeff">
 
     <h2>Introduction:</h2>
-    <h4 >introtextintrotextintrotextintrotext</h4>
+    <h4>introtextintrotextintrotextintrotext</h4>
 </div>
+
+
+
+ <div id="desktopApps" style="padding-top: 64px; padding-left: 16px;">
+    <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 4px white); width: fit-content">
+      <img src="./images/appicon.jpg" style="width: 64px; height: 64px; border-radius: 8px;">
+      <p style="margin: 0px; color: #000000; ">Timer</p>
+    </div>
+  </div>
 
 
 <script src='./script.js'>
